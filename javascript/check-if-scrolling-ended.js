@@ -7,6 +7,9 @@ function checkIfScrollingEnded() {
     // create an event listener for the global scroll event
     window.addEventListener('scroll', function(e) {
 
+        // return, that the user is currently scrolling
+        isScrolling = true;
+
         // clear the timeout
         clearTimeout(scrollTimeout);
 
